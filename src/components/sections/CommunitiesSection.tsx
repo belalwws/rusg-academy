@@ -46,7 +46,7 @@ export const CommunitiesSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white dark:bg-slate-950 transition-colors duration-300">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -70,26 +70,26 @@ export const CommunitiesSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-2xl p-8 shadow-soft hover:shadow-glow transition-all duration-300 border-2 border-gray-100 hover:border-primary/20"
+              className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-soft hover:shadow-glow transition-all duration-300 border-2 border-gray-100 dark:border-slate-700 hover:border-primary/20"
             >
               <div className={`w-16 h-16 bg-gradient-to-br ${community.color} rounded-2xl flex items-center justify-center shadow-lg mb-6`}>
                 <community.icon className="text-white" size={32} />
               </div>
 
-              <h3 className="text-2xl font-bold text-text-primary mb-2">
+              <h3 className="text-2xl font-bold text-text-primary dark:text-slate-50 mb-2">
                 {community.title}
               </h3>
               
-              <p className="text-text-secondary mb-6">
+              <p className="text-text-secondary dark:text-slate-300 mb-6">
                 {community.description}
               </p>
 
               <div className="space-y-3">
-                <p className="text-sm font-semibold text-text-primary">المميزات:</p>
+                <p className="text-sm font-semibold text-text-primary dark:text-slate-100">المميزات:</p>
                 {community.features.map((feature) => (
                   <div key={feature} className="flex items-start gap-2">
                     <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                    <span className="text-sm text-text-secondary">{feature}</span>
+                    <span className="text-sm text-text-secondary dark:text-slate-300">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -102,13 +102,13 @@ export const CommunitiesSection: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-16 bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 lg:p-12 border border-primary/10"
+          className="mt-16 bg-gradient-to-r from-primary/5 to-accent/5 dark:from-primary/10 dark:to-accent/10 rounded-2xl p-8 lg:p-12 border border-primary/10 dark:border-primary/20"
         >
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-text-primary mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-text-primary dark:text-slate-50 mb-4">
               تفاعل آمن ومنظم
             </h3>
-            <p className="text-lg text-text-secondary">
+            <p className="text-lg text-text-secondary dark:text-slate-300">
               نوفر بيئة تفاعلية آمنة حيث يمكن للطلاب والمعلمين التواصل والتعاون بفعالية،
               مع الحفاظ على خصوصية البيانات وسلامة المحتوى.
             </p>

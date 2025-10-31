@@ -3,12 +3,38 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
   body {
-    @apply bg-background-light text-text-primary font-sans antialiased;
+    @apply bg-background-light text-text-primary font-sans antialiased transition-colors duration-300;
+  }
+
+  html.dark body {
+    @apply bg-slate-950 text-slate-50;
   }
 
   html {
     scroll-behavior: smooth;
+  }
+
+  /* Improve text contrast in dark mode */
+  html.dark h1,
+  html.dark h2,
+  html.dark h3,
+  html.dark h4,
+  html.dark h5,
+  html.dark h6 {
+    @apply text-slate-50;
+  }
+
+  html.dark p {
+    @apply text-slate-300;
   }
 }
 
@@ -21,9 +47,17 @@
     background: linear-gradient(135deg, rgba(233, 168, 33, 0.05) 0%, rgba(255, 179, 71, 0.05) 100%);
   }
 
+  html.dark .gradient-hero {
+    background: linear-gradient(135deg, rgba(233, 168, 33, 0.1) 0%, rgba(255, 179, 71, 0.1) 100%);
+  }
+
   .pattern-dots {
     background-image: radial-gradient(circle, rgba(233, 168, 33, 0.1) 1px, transparent 1px);
     background-size: 20px 20px;
+  }
+
+  html.dark .pattern-dots {
+    background-image: radial-gradient(circle, rgba(233, 168, 33, 0.15) 1px, transparent 1px);
   }
 
   .pattern-diagonal {
@@ -35,10 +69,59 @@
       rgba(233, 168, 33, 0.02) 20px
     );
   }
+
+  html.dark .pattern-diagonal {
+    background-image: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(233, 168, 33, 0.04) 10px,
+      rgba(233, 168, 33, 0.04) 20px
+    );
+  }
+
+  .shadow-soft {
+    @apply shadow-md transition-shadow duration-300;
+  }
+
+  html.dark .shadow-soft {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .shadow-glow {
+    @apply shadow-lg transition-shadow duration-300;
+  }
+
+  html.dark .shadow-glow {
+    box-shadow: 0 10px 40px rgba(233, 168, 33, 0.2), 0 0 20px rgba(233, 168, 33, 0.1);
+  }
+
+  /* Card backgrounds */
+  .bg-card-light {
+    @apply bg-white;
+  }
+
+  html.dark .bg-card-light {
+    @apply bg-slate-800;
+  }
+
+  /* Border improvements */
+  .border-light {
+    @apply border-gray-200;
+  }
+
+  html.dark .border-light {
+    @apply border-slate-700;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .dark-aware {
+    @apply transition-colors duration-300;
+  }
 }
+

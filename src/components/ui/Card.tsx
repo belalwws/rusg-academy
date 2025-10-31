@@ -23,7 +23,7 @@ export const Card: React.FC<CardProps> = ({
       transition={{ duration: 0.5, delay }}
       whileHover={hover ? { y: -8, scale: 1.02 } : {}}
       className={cn(
-        'bg-background-card rounded-2xl p-6 shadow-soft transition-all duration-300',
+        'bg-background-card dark:bg-slate-800 rounded-2xl p-6 shadow-soft transition-all duration-300 border border-gray-100 dark:border-slate-700',
         hover && 'hover:shadow-glow cursor-pointer',
         className
       )}

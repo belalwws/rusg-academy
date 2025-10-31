@@ -49,7 +49,7 @@ export const LearningMethodsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-background-light pattern-diagonal">
+    <section className="py-20 bg-background-light dark:bg-slate-900 pattern-diagonal transition-colors duration-300">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -73,8 +73,8 @@ export const LearningMethodsSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`relative bg-white rounded-2xl p-8 shadow-soft transition-all duration-300 hover:shadow-glow ${
-                method.available ? 'border-2 border-primary' : 'border-2 border-gray-200'
+              className={`relative bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-soft transition-all duration-300 hover:shadow-glow border-2 ${
+                method.available ? 'border-primary dark:border-primary' : 'border-gray-200 dark:border-slate-700'
               }`}
             >
               {/* Status Badge */}
@@ -99,13 +99,13 @@ export const LearningMethodsSection: React.FC = () => {
               </div>
 
               <div className="mt-4">
-                <h3 className="text-2xl font-bold text-text-primary mb-1 text-center">
+                <h3 className="text-2xl font-bold text-text-primary dark:text-slate-50 mb-1 text-center">
                   {method.title}
                 </h3>
-                <p className="text-sm text-text-secondary mb-2 text-center italic">
+                <p className="text-sm text-text-secondary dark:text-slate-400 mb-2 text-center italic">
                   ({method.subtitle})
                 </p>
-                <p className="text-sm text-text-secondary mb-6 text-center">
+                <p className="text-sm text-text-secondary dark:text-slate-300 mb-6 text-center">
                   {method.description}
                 </p>
                 
@@ -120,7 +120,7 @@ export const LearningMethodsSection: React.FC = () => {
                           className={method.available ? 'text-primary' : 'text-gray-500'} 
                         />
                       </div>
-                      <span className="text-text-secondary">{feature}</span>
+                      <span className="text-text-secondary dark:text-slate-300">{feature}</span>
                     </li>
                   ))}
                 </ul>

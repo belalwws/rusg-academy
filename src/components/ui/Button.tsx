@@ -18,8 +18,8 @@ export const Button: React.FC<ButtonProps> = ({
   
   const variants = {
     primary: 'gradient-primary text-white shadow-glow hover:shadow-xl hover:scale-105',
-    secondary: 'bg-white text-primary border-2 border-primary hover:bg-primary/5 hover:scale-105',
-    outline: 'border-2 border-gray-300 hover:border-primary hover:text-primary hover:scale-105',
+    secondary: 'bg-white dark:bg-slate-800 text-primary dark:text-primary border-2 border-primary hover:bg-primary/5 dark:hover:bg-primary/10 hover:scale-105',
+    outline: 'border-2 border-gray-300 dark:border-slate-600 text-text-primary dark:text-slate-200 hover:border-primary hover:text-primary hover:scale-105',
   };
 
   const sizes = {

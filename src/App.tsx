@@ -12,7 +12,7 @@ import { FloatingContact } from './components/sections/FloatingContact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-background-light">
+    <div className="min-h-screen bg-background-light dark:bg-slate-950 transition-colors duration-300">
       <Header />
       <main>
         <HeroSection />

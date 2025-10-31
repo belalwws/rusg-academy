@@ -5,7 +5,7 @@ import { Sparkles, TrendingUp, GraduationCap } from 'lucide-react';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-background-light dark:bg-slate-950 transition-colors duration-300">
       {/* Background Pattern */}
       <div className="absolute inset-0 gradient-hero pattern-dots -z-10" />
       
@@ -39,7 +39,7 @@ export const HeroSection: React.FC = () => {
               transition={{ delay: 0.3 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
             >
-              <span className="text-text-primary">أكاديمية رُشد</span>
+              <span className="text-text-primary dark:text-gray-100">أكاديمية رُشد</span>
               <br />
               <span className="gradient-primary bg-clip-text text-transparent">
                 طريقك نحو النمو والتطور
@@ -50,7 +50,7 @@ export const HeroSection: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-lg md:text-xl text-text-secondary mb-8 max-w-2xl mx-auto lg:mx-0"
+              className="text-lg md:text-xl text-text-secondary dark:text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0"
             >
               منصة تعليمية سحابية متكاملة توفر ثلاثة أنماط تعليمية: التعليم المسجل والتفاعلي والمباشر. 
               حل شامل لإدارة العملية التعليمية بكفاءة وتفاعل في بيئة رقمية موحدة.
@@ -79,15 +79,15 @@ export const HeroSection: React.FC = () => {
             >
               <div className="text-center lg:text-right">
                 <h3 className="text-3xl font-bold gradient-primary bg-clip-text text-transparent">500+</h3>
-                <p className="text-text-secondary text-sm">طالب نشط</p>
+                <p className="text-text-secondary dark:text-slate-400 text-sm">طالب نشط</p>
               </div>
               <div className="text-center lg:text-right">
                 <h3 className="text-3xl font-bold gradient-primary bg-clip-text text-transparent">50+</h3>
-                <p className="text-text-secondary text-sm">مدرب محترف</p>
+                <p className="text-text-secondary dark:text-slate-400 text-sm">مدرب محترف</p>
               </div>
               <div className="text-center lg:text-right">
                 <h3 className="text-3xl font-bold gradient-primary bg-clip-text text-transparent">100+</h3>
-                <p className="text-text-secondary text-sm">دورة تدريبية</p>
+                <p className="text-text-secondary dark:text-slate-400 text-sm">دورة تدريبية</p>
               </div>
             </motion.div>
           </motion.div>
@@ -119,15 +119,15 @@ export const HeroSection: React.FC = () => {
               <motion.div
                 animate={{ y: [0, -20, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-10 right-10 bg-white p-6 rounded-2xl shadow-glow w-64 z-10"
+                className="absolute top-10 right-10 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-glow w-64 z-10 border border-gray-100 dark:border-slate-700"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                  <div className="w-12 h-12 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center">
                     <GraduationCap className="text-primary" size={24} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-text-primary">تعليم تفاعلي</h4>
-                    <p className="text-sm text-text-secondary">خبرة تعليمية متميزة</p>
+                    <h4 className="font-bold text-text-primary dark:text-slate-100">تعليم تفاعلي</h4>
+                    <p className="text-sm text-text-secondary dark:text-slate-400">خبرة تعليمية متميزة</p>
                   </div>
                 </div>
               </motion.div>
@@ -135,15 +135,15 @@ export const HeroSection: React.FC = () => {
               <motion.div
                 animate={{ y: [0, 20, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                className="absolute bottom-20 left-0 bg-white p-6 rounded-2xl shadow-glow w-64 z-10"
+                className="absolute bottom-20 left-0 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-glow w-64 z-10 border border-gray-100 dark:border-slate-700"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-accent-cool/10 rounded-xl flex items-center justify-center">
+                  <div className="w-12 h-12 bg-accent-cool/10 dark:bg-accent-cool/20 rounded-xl flex items-center justify-center">
                     <TrendingUp className="text-accent-cool" size={24} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-text-primary">نمو مستمر</h4>
-                    <p className="text-sm text-text-secondary">تطوير المهارات بكفاءة</p>
+                    <h4 className="font-bold text-text-primary dark:text-slate-100">نمو مستمر</h4>
+                    <p className="text-sm text-text-secondary dark:text-slate-400">تطوير المهارات بكفاءة</p>
                   </div>
                 </div>
               </motion.div>

@@ -27,10 +27,16 @@ export default {
         background: {
           light: "#FAFAF9",
           card: "#FFFFFF",
+          dark: "#0F172A",
+          "dark-card": "#1E293B",
+          "dark-secondary": "#334155",
         },
         text: {
           primary: "#1E1E1E",
           secondary: "#555555",
+          "dark-primary": "#F1F5F9",
+          "dark-secondary": "#CBD5E1",
+          "dark-tertiary": "#94A3B8",
         },
       },
       fontFamily: {
