@@ -59,10 +59,7 @@ export const Header: React.FC = () => {
             ))}
             
             {/* Islamic Tools Dropdown */}
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: navItems.length * 0.1 }}
+            <div
               className="relative group"
             >
               <button className="text-text-primary hover:text-primary font-medium transition-colors flex items-center gap-1">
@@ -71,10 +68,8 @@ export const Header: React.FC = () => {
               </button>
               
               {/* Dropdown Menu */}
-              <motion.div
-                initial={{ opacity: 0, y: -10 }}
-                whileHover={{ opacity: 1, y: 0 }}
-                className="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-glow opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+              <div
+                className="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-glow z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none group-hover:pointer-events-auto"
               >
                 {islamicTools.map((tool, idx) => (
                   <a
@@ -87,8 +82,8 @@ export const Header: React.FC = () => {
                     {tool.label}
                   </a>
                 ))}
-              </motion.div>
-            </motion.div>
+              </div>
+            </div>
 
             {/* Communities Link */}
             <motion.a
