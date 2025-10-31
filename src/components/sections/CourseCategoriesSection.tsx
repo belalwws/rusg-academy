@@ -13,38 +13,38 @@ import {
 export const CourseCategoriesSection: React.FC = () => {
   const categories = [
     {
-      title: 'العلوم الإنسانية',
-      description: 'استكشف علم النفس، الفلسفة، والعلوم الاجتماعية',
-      icon: Users,
+      title: 'الدروس والفيديوهات',
+      description: 'محتوى تعليمي منظم في وحدات ودروس فرعية',
+      icon: BookOpen,
       color: 'bg-blue-500/10 text-blue-600',
     },
     {
-      title: 'اللغة العربية',
-      description: 'أتقن قواعد اللغة، الأدب، والبلاغة العربية',
-      icon: BookOpen,
-      color: 'bg-green-500/10 text-green-600',
-    },
-    {
-      title: 'اللغات الحديثة',
-      description: 'تعلم الإنجليزية، الفرنسية، وغيرها من اللغات',
-      icon: Languages,
+      title: 'التمارين التفاعلية',
+      description: 'اختبارات ومسائل بمستويات مختلفة مع تقييم فوري',
+      icon: Code,
       color: 'bg-purple-500/10 text-purple-600',
     },
     {
-      title: 'البرمجة والتقنية',
-      description: 'احترف البرمجة، التطوير، والتقنيات الحديثة',
-      icon: Code,
+      title: 'الجلسات المباشرة',
+      description: 'بث حي للمحاضرات مع إمكانية التفاعل المباشر',
+      icon: Users,
+      color: 'bg-green-500/10 text-green-600',
+    },
+    {
+      title: 'تتبع التقدم',
+      description: 'تقارير تفصيلية ونسبة إكمال المحتوى',
+      icon: GraduationCap,
       color: 'bg-orange-500/10 text-orange-600',
     },
     {
-      title: 'المواد الأكاديمية',
-      description: 'الرياضيات، العلوم، والمناهج الدراسية',
-      icon: GraduationCap,
+      title: 'الواجبات والمشاريع',
+      description: 'تسليم الواجبات وتقييمات من المعلمين',
+      icon: Languages,
       color: 'bg-red-500/10 text-red-600',
     },
     {
-      title: 'المهارات الشخصية',
-      description: 'القيادة، التواصل، وإدارة الوقت والمشاريع',
+      title: 'الشهادات المعتمدة',
+      description: 'شهادات إتمام معتمدة لجميع الدورات',
       icon: Globe,
       color: 'bg-teal-500/10 text-teal-600',
     },
@@ -60,10 +60,10 @@ export const CourseCategoriesSection: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-primary bg-clip-text text-transparent">مجالات الدورات المتاحة</span>
+            <span className="gradient-primary bg-clip-text text-transparent">محتوى الدورات والتعليم</span>
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            اختر المجال الذي يناسبك وابدأ رحلتك التعليمية في بيئة احترافية ومتطورة
+            محتوى تعليمي شامل بأنواع مختلفة ينسجم مع احتياجات الطلاب
           </p>
         </motion.div>
 

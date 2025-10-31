@@ -5,35 +5,41 @@ import { Check, Clock } from 'lucide-react';
 export const LearningMethodsSection: React.FC = () => {
   const methods = [
     {
-      title: 'تعليم تفاعلي',
-      status: 'قريباً',
-      features: [
-        'تفاعل مباشر مع المحتوى',
-        'أسئلة وتمارين تفاعلية',
-        'ردود فورية على الإجابات',
-        'تجربة تعليمية غامرة',
-      ],
-      available: false,
-    },
-    {
-      title: 'دورات مسجلة',
-      status: 'قريباً',
-      features: [
-        'تعلم بوتيرتك الخاصة',
-        'إمكانية الوصول على مدار الساعة',
-        'محتوى عالي الجودة',
-        'شهادات إتمام معتمدة',
-      ],
-      available: false,
-    },
-    {
-      title: 'تعليم مباشر',
+      title: 'التعليم المسجل',
+      description: 'Learning Recorded',
       status: 'متاح الآن',
       features: [
-        'جلسات مباشرة مع المدربين',
-        'تفاعل فوري مع الطلاب',
-        'جداول زمنية مرنة',
-        'دعم فني مباشر',
+        'رفع وتنظيم الدروس والفيديوهات',
+        'تقسيم المحتوى لوحدات ودروس فرعية',
+        'تتبع التقدم ونسبة الإكمال',
+        'تقييمات قصيرة بعد كل وحدة',
+        'تقارير تفصيلية للمعلمين',
+      ],
+      available: true,
+    },
+    {
+      title: 'التعليم التفاعلي',
+      description: 'Learning Interactive',
+      status: 'متاح الآن',
+      features: [
+        'تمارين تفاعلية متنوعة',
+        'اختبارات بمستويات مختلفة',
+        'تقييم فوري وتحليل الأداء',
+        'عناصر Gamification وتحفيز',
+        'لوحات متابعة لحظية',
+      ],
+      available: true,
+    },
+    {
+      title: 'التعليم المباشر',
+      description: 'Classes Live',
+      status: 'متاح الآن',
+      features: [
+        'بث مباشر بالصوت والصورة',
+        'جدولة الجلسات وإرسال تنبيهات',
+        'تسجيل تلقائي وحفظ سحابي',
+        'إدارة الحضور وتتبع التفاعل',
+        'مشاركة الشاشة والعروض',
       ],
       available: true,
     },
@@ -49,10 +55,10 @@ export const LearningMethodsSection: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-primary bg-clip-text text-transparent">أساليب التعليم</span>
+            <span className="gradient-primary bg-clip-text text-transparent">أنماط التعليم في رشد</span>
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            اختر أسلوب التعليم الذي يناسب احتياجاتك وجدولك الزمني
+            ثلاثة أنماط تعليمية متطورة لتلبية جميع احتياجاتك التعليمية
           </p>
         </motion.div>
 
@@ -90,9 +96,12 @@ export const LearningMethodsSection: React.FC = () => {
               </div>
 
               <div className="mt-4">
-                <h3 className="text-2xl font-bold text-text-primary mb-6 text-center">
+                <h3 className="text-2xl font-bold text-text-primary mb-1 text-center">
                   {method.title}
                 </h3>
+                <p className="text-sm text-text-secondary mb-6 text-center italic">
+                  {method.description}
+                </p>
                 
                 <ul className="space-y-4">
                   {method.features.map((feature) => (
