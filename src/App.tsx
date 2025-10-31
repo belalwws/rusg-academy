@@ -1,6 +1,5 @@
 import { Header } from './components/sections/Header';
 import { HeroSection } from './components/sections/HeroSection';
-import { CourseCategoriesSection } from './components/sections/CourseCategoriesSection';
 import { LearningMethodsSection } from './components/sections/LearningMethodsSection';
 import { IslamicFeaturesSection } from './components/sections/IslamicFeaturesSection';
 import { CommunitiesSection } from './components/sections/CommunitiesSection';
@@ -17,7 +16,6 @@ function App() {
       <Header />
       <main>
         <HeroSection />
-        <CourseCategoriesSection />
         <LearningMethodsSection />
         <IslamicFeaturesSection />
         <CommunitiesSection />

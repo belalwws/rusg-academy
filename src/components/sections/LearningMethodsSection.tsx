@@ -6,40 +6,43 @@ export const LearningMethodsSection: React.FC = () => {
   const methods = [
     {
       title: 'التعليم المسجل',
-      description: 'Learning Recorded',
+      subtitle: 'Learning Recorded',
+      description: 'توفر تجربة تعليمية ذاتية مرنة يمكن للطالب متابعتها في أي وقت ومن أي مكان',
       status: 'متاح الآن',
       features: [
-        'رفع وتنظيم الدروس والفيديوهات',
-        'تقسيم المحتوى لوحدات ودروس فرعية',
+        'رفع وتنظيم الدروس والفيديوهات التعليمية',
+        'تقسيم المحتوى إلى وحدات ودروس فرعية',
         'تتبع التقدم ونسبة الإكمال',
         'تقييمات قصيرة بعد كل وحدة',
-        'تقارير تفصيلية للمعلمين',
+        'تقارير تفصيلية للمعلمين والإدارة',
       ],
       available: true,
     },
     {
       title: 'التعليم التفاعلي',
-      description: 'Learning Interactive',
+      subtitle: 'Learning Interactive',
+      description: 'يحول المناهج إلى تجربة رقمية تفاعلية تعتمد على الأسئلة والتمارين والاختبارات',
       status: 'متاح الآن',
       features: [
-        'تمارين تفاعلية متنوعة',
-        'اختبارات بمستويات مختلفة',
+        'تمارين تفاعلية متنوعة (اختيار من متعدد، صواب/خطأ، توصيل، سحب وإفالت)',
+        'نظام تدريب واختبارات بمستويات مختلفة',
         'تقييم فوري وتحليل الأداء',
-        'عناصر Gamification وتحفيز',
-        'لوحات متابعة لحظية',
+        'لوحات متابعة لحظية للطالب والمعلمين',
+        'عناصر Gamification لتحفيز التعلم (نقاط، مكافآت، مؤشرات تقدم)',
       ],
       available: true,
     },
     {
       title: 'التعليم المباشر',
-      description: 'Classes Live',
+      subtitle: 'Classes Live',
+      description: 'توفر بيئة صف افتراضي متكاملة تتيح التفاعل المباشر بين المعلم والطالب',
       status: 'متاح الآن',
       features: [
-        'بث مباشر بالصوت والصورة',
-        'جدولة الجلسات وإرسال تنبيهات',
-        'تسجيل تلقائي وحفظ سحابي',
+        'بث مباشر بالصوت والصورة داخل المنصة',
+        'جدولة الجلسات وإرسال إشعارات تذكيرية',
+        'تسجيل تلقائي وحفظ الجلسات سحابياً',
         'إدارة الحضور وتتبع التفاعل',
-        'مشاركة الشاشة والعروض',
+        'مشاركة الشاشة والعروض التقديمية',
       ],
       available: true,
     },
@@ -99,7 +102,10 @@ export const LearningMethodsSection: React.FC = () => {
                 <h3 className="text-2xl font-bold text-text-primary mb-1 text-center">
                   {method.title}
                 </h3>
-                <p className="text-sm text-text-secondary mb-6 text-center italic">
+                <p className="text-sm text-text-secondary mb-2 text-center italic">
+                  ({method.subtitle})
+                </p>
+                <p className="text-sm text-text-secondary mb-6 text-center">
                   {method.description}
                 </p>
                 
