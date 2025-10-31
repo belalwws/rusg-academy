@@ -1,17 +1,26 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 
 export const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isIslamicDropdownOpen, setIsIslamicDropdownOpen] = useState(false);
 
   const navItems = [
     { label: 'الرئيسية', href: '#home' },
     { label: 'الدورات', href: '#courses' },
     { label: 'عن الأكاديمية', href: '#about' },
     { label: 'تواصل معنا', href: '#contact' },
-    { label: 'انضم كمدرب', href: '#join-trainer' },
+  ];
+
+  const islamicTools = [
+    { label: 'أذكار الصباح والمساء', href: '#adhkar' },
+    { label: 'مواقيت الصلاة', href: '#prayer-times' },
+    { label: 'قارئ القرآن الكريم', href: '#quran' },
+    { label: 'الحديث اليومي', href: '#hadith' },
+    { label: 'ألعاب ومسابقات إسلامية', href: '#islamic-games' },
+    { label: 'عداد التسبيح الرقمي', href: '#tasbih' },
   ];
 
   return (
@@ -49,6 +58,60 @@ export const Header: React.FC = () => {
                 {item.label}
               </motion.a>
             ))}
+            
+            {/* Islamic Tools Dropdown */}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: navItems.length * 0.1 }}
+              className="relative group"
+            >
+              <button className="text-text-primary hover:text-primary font-medium transition-colors flex items-center gap-1">
+                الأدوات الإسلامية
+                <ChevronDown size={16} className="group-hover:rotate-180 transition-transform" />
+              </button>
+              
+              {/* Dropdown Menu */}
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                whileHover={{ opacity: 1, y: 0 }}
+                className="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-glow opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+              >
+                {islamicTools.map((tool, idx) => (
+                  <a
+                    key={tool.label}
+                    href={tool.href}
+                    className={`block px-6 py-3 text-text-secondary hover:text-primary hover:bg-primary/5 transition-colors ${
+                      idx === 0 ? 'rounded-t-2xl' : ''
+                    } ${idx === islamicTools.length - 1 ? 'rounded-b-2xl' : ''}`}
+                  >
+                    {tool.label}
+                  </a>
+                ))}
+              </motion.div>
+            </motion.div>
+
+            {/* Communities Link */}
+            <motion.a
+              href="#communities"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: (navItems.length + 1) * 0.1 }}
+              className="text-text-primary hover:text-primary font-medium transition-colors"
+            >
+              المجتمعات
+            </motion.a>
+
+            {/* Interactive Islamic */}
+            <motion.a
+              href="#islamic-interactive"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: (navItems.length + 2) * 0.1 }}
+              className="text-text-primary hover:text-primary font-medium transition-colors"
+            >
+              التفاعلي الإسلامي
+            </motion.a>
           </nav>
 
           {/* CTA Buttons */}
@@ -89,6 +152,45 @@ export const Header: React.FC = () => {
                   {item.label}
                 </a>
               ))}
+              
+              {/* Mobile Islamic Tools */}
+              <div className="py-2">
+                <button className="w-full text-right text-text-primary hover:text-primary font-medium transition-colors flex items-center gap-2">
+                  الأدوات الإسلامية
+                  <ChevronDown size={16} />
+                </button>
+                <div className="mt-2 ml-4 flex flex-col gap-2">
+                  {islamicTools.map((tool) => (
+                    <a
+                      key={tool.label}
+                      href={tool.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="text-text-secondary hover:text-primary transition-colors py-1"
+                    >
+                      {tool.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+              {/* Mobile Communities */}
+              <a
+                href="#communities"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-text-primary hover:text-primary font-medium transition-colors py-2"
+              >
+                المجتمعات
+              </a>
+
+              {/* Mobile Interactive Islamic */}
+              <a
+                href="#islamic-interactive"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-text-primary hover:text-primary font-medium transition-colors py-2"
+              >
+                التفاعلي الإسلامي
+              </a>
+
               <div className="flex flex-col gap-2 mt-4">
                 <Button variant="outline" size="md">
                   تسجيل الدخول

@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
             </p>
             <Button variant="primary" size="sm">
               <span className="flex items-center gap-2">
-                انضم كمدرب
+                انضم كمدرس
                 <ArrowRight size={16} />
               </span>
             </Button>
