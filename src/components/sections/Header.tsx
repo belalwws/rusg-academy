@@ -25,7 +25,7 @@ export const Header: React.FC = () => {
             className="flex items-center gap-3"
           >
             <img 
-              src="/logo.jpeg" 
+              src="/logo.png" 
               alt="شعار أكاديمية رشد" 
               className="w-12 h-12 object-contain rounded-xl shadow-glow"
             />
