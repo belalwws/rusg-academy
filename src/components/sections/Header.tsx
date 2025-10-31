@@ -26,11 +26,11 @@ export const Header: React.FC = () => {
           >
             <img 
               src="/logo.png" 
-              alt="شعار أكاديمية رشد" 
+              alt="شعار أكاديمية رُشد" 
               className="w-12 h-12 object-contain rounded-xl shadow-glow"
             />
             <div className="hidden sm:block">
-              <h1 className="text-xl font-bold text-primary">أكاديمية رشد</h1>
+              <h1 className="text-xl font-bold text-primary">أكاديمية رُشد</h1>
               <p className="text-xs text-text-secondary">طريقك نحو النمو</p>
             </div>
           </motion.div>

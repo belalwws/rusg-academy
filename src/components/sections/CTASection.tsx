@@ -41,7 +41,7 @@ export const CTASection: React.FC = () => {
               transition={{ delay: 0.3 }}
               className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight"
             >
-              ابدأ رحلتك التعليمية اليوم مع رشد
+              ابدأ رحلتك التعليمية اليوم مع رُشد
             </motion.h2>
 
             <motion.p

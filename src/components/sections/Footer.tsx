@@ -42,12 +42,12 @@ export const Footer: React.FC = () => {
           >
             <div className="flex items-center gap-3 mb-4">
               <img 
-                src="/logo.jpeg" 
-                alt="شعار أكاديمية رشد" 
+                src="/logo.png" 
+                alt="شعار أكاديمية رُشد" 
                 className="w-12 h-12 object-contain rounded-xl shadow-glow"
               />
               <div>
-                <h3 className="text-xl font-bold">أكاديمية رشد</h3>
+                <h3 className="text-xl font-bold">أكاديمية رُشد</h3>
                 <p className="text-sm text-gray-400">طريقك نحو النمو</p>
               </div>
             </div>
@@ -164,7 +164,7 @@ export const Footer: React.FC = () => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm text-center md:text-right">
-              © 2025 أكاديمية رشد. جميع الحقوق محفوظة.
+              © 2025 أكاديمية رُشد. جميع الحقوق محفوظة.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#privacy" className="text-gray-400 hover:text-primary transition-colors">

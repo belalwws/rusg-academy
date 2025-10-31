@@ -63,7 +63,7 @@ export const IslamicFeaturesSection: React.FC = () => {
             <span className="font-semibold">مزايا إسلامية متطورة</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-primary bg-clip-text text-transparent">المزايا الإسلامية في رشد</span>
+            <span className="gradient-primary bg-clip-text text-transparent">المزايا الإسلامية في رُشد</span>
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
             نجمع بين التعليم والدين لتقوية الإيمان جنباً إلى جنب مع التطور العلمي
@@ -102,7 +102,7 @@ export const IslamicFeaturesSection: React.FC = () => {
               تجربة إسلامية تعليمية متكاملة
             </h3>
             <p className="text-lg text-text-secondary mb-6">
-              حرصنا في أكاديمية رشد على دمج أدوات ومحتوى إسلامي احترافي يساعدك على تعزيز روح الإيمان بجانب التعليم،
+              حرصنا في أكاديمية رُشد على دمج أدوات ومحتوى إسلامي احترافي يساعدك على تعزيز روح الإيمان بجانب التعليم،
               من خلال تجربة تفاعلية سهلة وممتعة تناسب الأطفال والكبار.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

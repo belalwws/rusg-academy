@@ -41,7 +41,7 @@ export const AboutSection: React.FC = () => {
             <span className="gradient-primary bg-clip-text text-transparent">من نحن</span>
           </h2>
           <p className="text-lg text-text-secondary max-w-3xl mx-auto leading-relaxed">
-            أكاديمية رشد هي منصة تعليمية رقمية متخصصة في تقديم دورات تدريبية عالية الجودة 
+            أكاديمية رُشد هي منصة تعليمية رقمية متخصصة في تقديم دورات تدريبية عالية الجودة 
             في مختلف المجالات. نؤمن بأن التعليم هو مفتاح النمو والتطور، ونسعى لتوفير 
             بيئة تعليمية حديثة تساعد المتعلمين على تحقيق أهدافهم.
           </p>

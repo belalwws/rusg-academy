@@ -39,7 +39,7 @@ export const HeroSection: React.FC = () => {
               transition={{ delay: 0.3 }}
               className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
             >
-              <span className="text-text-primary">أكاديمية رشد</span>
+              <span className="text-text-primary">أكاديمية رُشد</span>
               <br />
               <span className="gradient-primary bg-clip-text text-transparent">
                 طريقك نحو النمو والتطور

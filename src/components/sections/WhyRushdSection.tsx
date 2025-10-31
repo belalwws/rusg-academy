@@ -60,7 +60,7 @@ export const WhyRushdSection: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-primary bg-clip-text text-transparent">لماذا أكاديمية رشد؟</span>
+            <span className="gradient-primary bg-clip-text text-transparent">لماذا أكاديمية رُشد؟</span>
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
             نقدم لك تجربة تعليمية متكاملة تجمع بين الجودة والابتكار
