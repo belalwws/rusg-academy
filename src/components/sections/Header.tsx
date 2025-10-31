@@ -60,24 +60,24 @@ export const Header: React.FC = () => {
             
             {/* Islamic Tools Dropdown */}
             <div
-              className="relative group"
+              className="relative group/islamic"
             >
-              <button className="text-text-primary hover:text-primary font-medium transition-colors flex items-center gap-1">
+              <button className="text-text-primary hover:text-primary font-medium transition-colors flex items-center gap-1 py-2">
                 الأدوات الإسلامية
-                <ChevronDown size={16} className="group-hover:rotate-180 transition-transform" />
+                <ChevronDown size={16} className="group-hover/islamic:rotate-180 transition-transform" />
               </button>
               
               {/* Dropdown Menu */}
               <div
-                className="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-glow z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 pointer-events-none group-hover:pointer-events-auto"
+                className="absolute right-0 mt-0 w-56 bg-white rounded-2xl shadow-glow z-50 opacity-0 invisible group-hover/islamic:opacity-100 group-hover/islamic:visible transition-all duration-300 pointer-events-none group-hover/islamic:pointer-events-auto"
               >
                 {islamicTools.map((tool, idx) => (
                   <a
                     key={tool.label}
                     href={tool.href}
-                    className={`block px-6 py-3 text-text-secondary hover:text-primary hover:bg-primary/5 transition-colors ${
-                      idx === 0 ? 'rounded-t-2xl' : ''
-                    } ${idx === islamicTools.length - 1 ? 'rounded-b-2xl' : ''}`}
+                    className={`block px-6 py-4 text-text-secondary hover:text-primary hover:bg-primary/5 transition-colors font-medium ${
+                      idx === 0 ? 'rounded-t-2xl pt-6' : ''
+                    } ${idx === islamicTools.length - 1 ? 'rounded-b-2xl pb-6' : ''}`}
                   >
                     {tool.label}
                   </a>
