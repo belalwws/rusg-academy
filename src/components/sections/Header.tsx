@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/Button';
 
 export const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isIslamicDropdownOpen, setIsIslamicDropdownOpen] = useState(false);
 
   const navItems = [
     { label: 'الرئيسية', href: '#home' },
