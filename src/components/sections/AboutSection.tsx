@@ -29,7 +29,7 @@ export const AboutSection: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background-light pattern-dots">
+    <section id="about" className="py-20 bg-background-light dark:bg-slate-950 pattern-dots">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,10 +37,10 @@ export const AboutSection: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 dark:text-slate-50">
             <span className="gradient-primary bg-clip-text text-transparent">من نحن</span>
           </h2>
-          <p className="text-lg text-text-secondary max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-text-secondary dark:text-slate-300 max-w-3xl mx-auto leading-relaxed">
             أكاديمية رُشد هي منصة تعليمية رقمية متخصصة في تقديم دورات تدريبية عالية الجودة 
             في مختلف المجالات. نؤمن بأن التعليم هو مفتاح النمو والتطور، ونسعى لتوفير 
             بيئة تعليمية حديثة تساعد المتعلمين على تحقيق أهدافهم.
@@ -55,10 +55,10 @@ export const AboutSection: React.FC = () => {
                 <div className="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-glow">
                   <value.icon className="text-white" size={32} />
                 </div>
-                <h3 className="text-xl font-bold text-text-primary mb-2">
+                <h3 className="text-xl font-bold text-text-primary dark:text-slate-50 mb-2">
                   {value.title}
                 </h3>
-                <p className="text-text-secondary">
+                <p className="text-text-secondary dark:text-slate-300">
                   {value.description}
                 </p>
               </div>
@@ -71,9 +71,9 @@ export const AboutSection: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-white rounded-2xl p-8 md:p-12 shadow-glow"
+          className="bg-white dark:bg-slate-900 rounded-2xl p-8 md:p-12 shadow-glow dark:shadow-soft border border-transparent dark:border-slate-800"
         >
-          <h3 className="text-2xl md:text-3xl font-bold text-center mb-12 text-text-primary">
+          <h3 className="text-2xl md:text-3xl font-bold text-center mb-12 text-text-primary dark:text-slate-50">
             أرقامنا تتحدث
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -86,13 +86,13 @@ export const AboutSection: React.FC = () => {
                 transition={{ delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-primary/10 dark:bg-primary/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <stat.icon className="text-primary" size={32} />
                 </div>
                 <h4 className="text-4xl md:text-5xl font-bold gradient-primary bg-clip-text text-transparent mb-2">
                   {stat.number}
                 </h4>
-                <p className="text-text-secondary font-medium">
+                <p className="text-text-secondary dark:text-slate-300 font-medium">
                   {stat.label}
                 </p>
               </motion.div>

@@ -50,7 +50,7 @@ export const IslamicFeaturesSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-background-light">
+    <section className="py-20 bg-gradient-to-b from-white to-background-light dark:from-slate-950 dark:to-slate-900">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -58,14 +58,14 @@ export const IslamicFeaturesSection: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center gap-2 bg-green-500/10 text-green-600 px-4 py-2 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-green-500/10 dark:bg-green-500/20 text-green-600 dark:text-green-400 px-4 py-2 rounded-full mb-6">
             <Heart size={20} />
             <span className="font-semibold">مزايا إسلامية متطورة</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 dark:text-slate-50">
             <span className="gradient-primary bg-clip-text text-transparent">المزايا الإسلامية في رُشد</span>
           </h2>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto">
+          <p className="text-lg text-text-secondary dark:text-slate-300 max-w-2xl mx-auto">
             نجمع بين التعليم والدين لتقوية الإيمان جنباً إلى جنب مع التطور العلمي
           </p>
         </motion.div>
@@ -78,10 +78,10 @@ export const IslamicFeaturesSection: React.FC = () => {
                   <feature.icon className="text-white" size={32} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-text-primary mb-2">
+                  <h3 className="text-xl font-bold text-text-primary dark:text-slate-50 mb-2">
                     {feature.title}
                   </h3>
-                  <p className="text-text-secondary">
+                  <p className="text-text-secondary dark:text-slate-300">
                     {feature.description}
                   </p>
                 </div>
@@ -95,28 +95,28 @@ export const IslamicFeaturesSection: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-16 bg-gradient-to-r from-green-500/10 to-blue-500/10 rounded-2xl p-8 lg:p-12 border border-green-500/20"
+          className="mt-16 bg-gradient-to-r from-green-500/10 to-blue-500/10 dark:from-green-500/20 dark:to-blue-500/20 rounded-2xl p-8 lg:p-12 border border-green-500/20 dark:border-green-500/30"
         >
           <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-text-primary mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-text-primary dark:text-slate-50 mb-4">
               تجربة إسلامية تعليمية متكاملة
             </h3>
-            <p className="text-lg text-text-secondary mb-6">
+            <p className="text-lg text-text-secondary dark:text-slate-300 mb-6">
               حرصنا في أكاديمية رُشد على دمج أدوات ومحتوى إسلامي احترافي يساعدك على تعزيز روح الإيمان بجانب التعليم،
               من خلال تجربة تفاعلية سهلة وممتعة تناسب الأطفال والكبار.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <div className="text-center">
                 <h4 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">6+</h4>
-                <p className="text-text-secondary">مزايا إسلامية</p>
+                <p className="text-text-secondary dark:text-slate-300">مزايا إسلامية</p>
               </div>
               <div className="text-center">
                 <h4 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">مجاني</h4>
-                <p className="text-text-secondary">لجميع المستخدمين</p>
+                <p className="text-text-secondary dark:text-slate-300">لجميع المستخدمين</p>
               </div>
               <div className="text-center">
                 <h4 className="text-2xl font-bold gradient-primary bg-clip-text text-transparent">آمن</h4>
-                <p className="text-text-secondary">محتوى معتمد</p>
+                <p className="text-text-secondary dark:text-slate-300">محتوى معتمد</p>
               </div>
             </div>
           </div>

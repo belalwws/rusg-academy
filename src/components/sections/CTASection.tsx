@@ -5,7 +5,7 @@ import { ArrowRight, BookOpen } from 'lucide-react';
 
 export const CTASection: React.FC = () => {
   return (
-    <section className="py-20 bg-white overflow-hidden relative">
+    <section className="py-20 bg-white dark:bg-slate-950 overflow-hidden relative">
       {/* Background Elements */}
       <div className="absolute inset-0 gradient-hero pattern-diagonal -z-10" />
       <div className="absolute top-10 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />

@@ -74,7 +74,7 @@ export const LearningToolsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-background-light">
+    <section className="py-20 bg-background-light dark:bg-slate-900">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -82,10 +82,10 @@ export const LearningToolsSection: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 dark:text-slate-50">
             <span className="gradient-primary bg-clip-text text-transparent">أدوات تعليمية تفاعلية</span>
           </h2>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto">
+          <p className="text-lg text-text-secondary dark:text-slate-300 max-w-2xl mx-auto">
             مجموعة متكاملة من الأدوات لتحسين تجربتك التعليمية وتحقيق أهدافك
           </p>
         </motion.div>
@@ -98,8 +98,8 @@ export const LearningToolsSection: React.FC = () => {
                 <div className="absolute -top-2 -left-2">
                   <div className={`px-3 py-1 rounded-full text-xs font-semibold ${
                     tool.status === 'متاح'
-                      ? 'bg-green-100 text-green-700'
-                      : 'bg-orange-100 text-orange-700'
+                      ? 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300'
+                      : 'bg-orange-100 text-orange-700 dark:bg-orange-900 dark:text-orange-300'
                   }`}>
                     {tool.status === 'متاح' ? (
                       <span className="flex items-center gap-1">
@@ -118,10 +118,10 @@ export const LearningToolsSection: React.FC = () => {
                   <tool.icon className="text-white" size={28} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-text-primary mb-2">
+                  <h3 className="text-lg font-bold text-text-primary dark:text-slate-50 mb-2">
                     {tool.title}
                   </h3>
-                  <p className="text-sm text-text-secondary">
+                  <p className="text-sm text-text-secondary dark:text-slate-300">
                     {tool.description}
                   </p>
                 </div>

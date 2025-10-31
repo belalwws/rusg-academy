@@ -47,12 +47,12 @@ export const FloatingContact: React.FC = () => {
                 exit={{ opacity: 0, x: -20 }}
                 transition={{ delay: index * 0.1 }}
                 onClick={contact.action}
-                className={`flex items-center gap-3 bg-white rounded-2xl px-4 py-3 shadow-lg ${contact.hoverColor} hover:shadow-xl transition-all duration-300 group`}
+                className={`flex items-center gap-3 bg-white dark:bg-slate-800 rounded-2xl px-4 py-3 shadow-lg ${contact.hoverColor} hover:shadow-xl dark:hover:shadow-xl transition-all duration-300 group border border-transparent dark:border-slate-700`}
               >
                 <div className={`w-12 h-12 bg-gradient-to-br ${contact.color} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform`}>
                   <contact.icon className="text-white" size={24} />
                 </div>
-                <span className="font-semibold text-text-primary">{contact.label}</span>
+                <span className="font-semibold text-text-primary dark:text-slate-200">{contact.label}</span>
               </motion.button>
             ))}
           </motion.div>
